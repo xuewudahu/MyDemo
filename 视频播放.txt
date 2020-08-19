@@ -1,0 +1,13 @@
+//设置视频控制器
+videoview.setMediaController(MediaController(this))
+
+//播放完成回调
+videoview.setOnCompletionListener(MyPlayerOnCompletionListener())
+
+//设置视频路径
+ videoview.setVideoURI(uri)
+
+//开始播放视频
+videoview.start()
+
+//单单设置路径不可以，放不了视频

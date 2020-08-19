@@ -1,0 +1,18 @@
+
+import android.app.Application
+import android.content.Context
+
+class MyApplication :Application() {
+    companion object{
+        @SuppressWarnings("StaticFieldLeak")
+        lateinit var context: Context
+    }
+
+    override fun onCreate() {
+        super.onCreate()
+        context=applicationContext
+    }
+}
+//注意需要在Androidmani.xml中设置启动MyApplication 
+//android:name=".MyApplication"
+//获取方法：MyApplication.context

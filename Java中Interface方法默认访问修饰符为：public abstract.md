@@ -1,0 +1,3 @@
+Java中Interface方法默认访问修饰符为：public abstract
+
+Java中Interface常量的默认访问修饰符为：public static final
